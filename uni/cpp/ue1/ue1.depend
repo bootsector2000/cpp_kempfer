@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1446824942 source:/home/wolle/uni/cpp/ue1/main.cpp
+	<iostream>
+	"TDate.h"
+	"TTime.h"
+	"TAdress.h"
+	"TLocation.h"
+	"TPerson.h"
+	"TMedium.h"
+	<stdio.h>
+	"tools.h"
+
+1445611032 source:/home/wolle/uni/cpp/ue1/src/TDate.cpp
+	"TDate.h"
+	<time.h>
+	<stdio.h>
+
+1445166090 /home/wolle/uni/cpp/ue1/include/TDate.h
+
+1445608802 /home/wolle/uni/cpp/ue1/include/TTime.h
+
+1445608872 source:/home/wolle/uni/cpp/ue1/src/TTime.cpp
+	"TTime.h"
+	<stdio.h>
+	<time.h>
+
+1445368642 source:/home/wolle/uni/cpp/ue1/src/TAdress.cpp
+	"TAdress.h"
+	<stdio.h>
+
+1445170050 /home/wolle/uni/cpp/ue1/include/TAdress.h
+	<string>
+
+1445368894 source:/home/wolle/uni/cpp/ue1/src/TLocation.cpp
+	"TLocation.h"
+	<stdio.h>
+
+1445609772 /home/wolle/uni/cpp/ue1/include/TLocation.h
+	<string>
+
+1446752040 /home/wolle/uni/cpp/ue1/include/TPerson.h
+	<string>
+	"TAdress.h"
+	"TDate.h"
+
+1446752290 source:/home/wolle/uni/cpp/ue1/src/TPerson.cpp
+	"TPerson.h"
+	<stdio.h>
+
+1447947758 source:/home/wolle/uni/cpp/ue1/src/TLibrary.cpp
+	"TLibrary.h"
+
+1447947776 /home/wolle/uni/cpp/ue1/include/TLibrary.h
+	"TAdress.h"
+	"TMedium.h"
+	<vector>
+
+1447946833 source:/home/wolle/uni/cpp/ue1/src/TMedium.cpp
+	"TMedium.h"
+	<stdio.h>
+
+1446824886 /home/wolle/uni/cpp/ue1/include/TMedium.h
+	<string.h>
+	"TLocation.h"
+
+1446751102 source:/home/wolle/uni/cpp/ue1/src/tools.cpp
+	"tools.h"
+	<iostream>
+
+1446750912 /home/wolle/uni/cpp/ue1/include/tools.h
+	"TDate.h"
+	"TTime.h"
+
