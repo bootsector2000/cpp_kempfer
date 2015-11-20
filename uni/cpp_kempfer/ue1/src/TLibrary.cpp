@@ -1,11 +1,23 @@
 #include "TLibrary.h"
 
-TLibrary::TLibrary()
+/**************
+* add vervollständigen
+*****************/
+
+
+TLibrary::TLibrary(string name, TAdress address, vector<TMedium*> vMedia)
 {
-    //ctor
+    this->storeName = name;
+    this->storeAdress = address;
+    this->vMedia = vMedia;
 }
 
 TLibrary::~TLibrary()
 {
     //dtor
+}
+
+void TLibrary::add(TMedium medium)
+{
+    //blub
 }
