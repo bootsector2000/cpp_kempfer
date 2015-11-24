@@ -13,12 +13,13 @@ class TMedium
         int fsk;
 
         int status;
+
+    public:
+
         const static int verfuegbar = 0b0001;   //0001
         const static int ausgeliehen = 0b0010;  //0010
         const static int bestellt = 0b0100;     //0100
         const static int reserviert = 0b1000;   //1000
-
-    public:
 
         TMedium();
         TMedium(string, string, TLocation, int, int);

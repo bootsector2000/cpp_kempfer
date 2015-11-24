@@ -1,5 +1,6 @@
 #include "TMedium.h"
-#include <stdio.h>
+#include <cstdio>
+#include <iostream>
 
 
 TMedium::TMedium()
@@ -71,5 +72,10 @@ int TMedium::getStatus()
 
 void TMedium::print()
 {
-
+    cout << "Titel:    " << this->getTitle(); cout << endl;
+    cout << "Signatur: " << this->getSignature(); cout << endl;
+    cout << "Ort:      " ;this->location.print();
+    cout << "FSK:      " << this->getFSK(); cout << endl;
+    cout << "Status:   " << this->getStatus(); cout << endl;
+    cout << endl;
 }

@@ -1,5 +1,6 @@
 #include "TLocation.h"
 #include <stdio.h>
+#include <iostream>
 
 TLocation::TLocation() {
     _section="Büro";
@@ -28,5 +29,6 @@ string TLocation::getRack() {
 }
 
 void TLocation::print() {
-    printf ("sect: %s | rack: %s", _section.c_str(), _rack.c_str());
+    //printf ("sect: %s | rack: %s", _section.c_str(), _rack.c_str());
+    cout << "Abt.: " << this->_rack << "; Regal: " << this->_section << endl;
 }

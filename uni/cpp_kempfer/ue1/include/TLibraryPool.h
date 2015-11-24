@@ -15,11 +15,16 @@ class TLibraryPool
         vector<TPerson*> customers;
 
     public:
-        TLibraryPool(string, TPerson*, vector<TLibrary*>, vector<TPerson*>);
+        TLibraryPool(string, TPerson*);
         ~TLibraryPool();
 
         void add(TLibrary*);
         void add(TPerson*);
+
+        void print();
+
+        string getName();
+        string getBoss();
 };
 
 #endif // TLIBRARYPOOL_H

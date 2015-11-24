@@ -37,6 +37,7 @@
 		<Unit filename="include/TAdress.h" />
 		<Unit filename="include/TDate.h" />
 		<Unit filename="include/TLibrary.h" />
+		<Unit filename="include/TLibraryPool.h" />
 		<Unit filename="include/TLocation.h" />
 		<Unit filename="include/TMedium.h" />
 		<Unit filename="include/TPerson.h" />
@@ -51,6 +52,7 @@
 		<Unit filename="src/TAdress.cpp" />
 		<Unit filename="src/TDate.cpp" />
 		<Unit filename="src/TLibrary.cpp" />
+		<Unit filename="src/TLibraryPool.cpp" />
 		<Unit filename="src/TLocation.cpp" />
 		<Unit filename="src/TMedium.cpp" />
 		<Unit filename="src/TPerson.cpp" />

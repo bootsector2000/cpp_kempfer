@@ -46,7 +46,10 @@ TDate TPerson::getDob() {
 
 void TPerson::print() {
     printf ("%s\n%s %s\n%s %s",
-     this->name.c_str(),
-     this->address.getStreet().c_str(), this->address.getHouseNr().c_str(),
-     this->address.getZipcode().c_str(), this->address.getCity().c_str());
+    this->name.c_str(),
+    this->address.getStreet().c_str(), this->address.getHouseNr().c_str(),
+    this->address.getZipcode().c_str(), this->address.getCity().c_str());
+    printf ("\n* "); this->dob.print();
+    printf ("\n\n");
+
 }

@@ -7,47 +7,44 @@
 #include "TMedium.h"
 #include <stdio.h>
 #include "tools.h"
+#include "TLibraryPool.h"
 
 using namespace std;
 
 int main()
 {
-    double version = 0.11;
+ TDate D1(17, 11, 1963);
+ TLocation L1("Technik", "Computer");
+ TLocation L2("Romane", "Krimi");
+ TLocation L3("Kinder", "Comics");
+ TLocation L4("DVDs", "Horror");
 
-    TDate D1, D2(3, 10, 2015);
-    TTime T1, T2(14,15);
+ TAdress A1("Buchallee", "15a", "13315", "Berlin");
+ TAdress A2("Schlossstr.", "117", "12077", "Berlin");
 
-    TAdress A1 ("Luxemburger Str.", "10", "D-10335", "Berlin");
-    TAdress myAddress ("Siegfriedstraße", "25", "D-10365", "Berlin");
+ TPerson *Leitung = new TPerson("Egon Mustermann", A2, D1);
+ TPerson *K1 = new TPerson("Marion Schulz", A1, D1);
+ TPerson *K2 = new TPerson("Stefan Meier", A2, D1);
 
-    TLocation L1, L2("Technik", "Computer");
+ TMedium *M1 = new TMedium("Programmieren in C", "PC99", L1, 0, TMedium::ausgeliehen);
+ TMedium *M2 = new TMedium("Der Hexer", "He83", L2, 12, TMedium::verfuegbar);
+ TMedium *M3 = new TMedium("Asterix und Obelix", "KC17", L3, 0, TMedium::verfuegbar);
+ TMedium *M4 = new TMedium("Der Werwolf", "WW175", L4, 16, TMedium::ausgeliehen);
 
-    TDate myDob(24,06,1988);    //date of Birth
+ TLibrary *LWedding = new TLibrary("Wedding", A1);
+ TLibrary *LSteglitz = new TLibrary("Steglitz", A2);
+ TLibraryPool LP("Buechereiverband Berlin", Leitung);
 
-    TPerson Tom ("Tom Wollmann", myAddress, myDob);
+ LWedding->add(M1);
+ LWedding->add(M2);
 
-    printStart(D1, T1, version);
+ LSteglitz->add(M3);
+ LSteglitz->add(M4);
+ LP.add(LWedding);
+ LP.add(LSteglitz);
+ LP.add(K1);
+ LP.add(K2);
+ LP.print();
 
-    TMedium *M1 = new TMedium("Buchtitel", "Buchsignatur", L2, 18, 1);
-
-    /*cout << "\nKlasse TDate:" << endl;
-    cout << "Tag der deutschen Einheit: " ; D2.print(); cout << endl;
-
-    cout << "\nKlasse TTime:" << endl;
-    cout << "Vorlesungsbeginn: "; T2.print(); cout << endl;
-
-    cout << "\nKlasse TAdress:" << endl;
-    cout << "Meine Adresse:\n"; myAddress.print(); cout << endl;
-
-    cout << "\nKlasse TLocation:" << endl;
-    cout << "Standardkonstruktor neue Bücher: "; L1.print() ; cout << endl;
-    cout << "Konstruktor Abteilung Technik, Computerregal: "; L2.print(); cout << endl;
-
-    cout << "\nKlasse TAdress:" << endl;
-    cout << "Beuth Hochschule für Technik Berlin:\n" ; A1.print(); cout << endl;
-
-    cout << "\nKlasse TPerson:" << endl;
-    cout << "Konstruktor Tom:\n" ; Tom.print(); cout << endl;*/
-
-    return 0;
+ return 0;
 }

@@ -14,9 +14,11 @@ class TLibrary
         vector<TMedium*> vMedia;
 
     public:
-        TLibrary(string, TAdress, vector<TMedium*>);
+        TLibrary(string, TAdress);
         ~TLibrary();
-        void add(TMedium);
+        void add(TMedium*);
+
+        void print();
 };
 
 #endif // TLIBRARY_H
