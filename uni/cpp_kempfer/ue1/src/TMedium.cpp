@@ -76,6 +76,6 @@ void TMedium::print()
     cout << "Signatur: " << this->getSignature(); cout << endl;
     cout << "Ort:      " ;this->location.print();
     cout << "FSK:      " << this->getFSK(); cout << endl;
-    cout << "Status:   " << this->getStatus(); cout << endl;
+    cout << "Status:   " << statusToString(this->status); cout << endl;
     cout << endl;
 }

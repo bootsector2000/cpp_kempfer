@@ -3,6 +3,7 @@
 
 #include <string.h>
 #include "TLocation.h"
+#include "tools.h"
 
 class TMedium
 {
@@ -11,7 +12,6 @@ class TMedium
         string signature;
         TLocation location;
         int fsk;
-
         int status;
 
     public:

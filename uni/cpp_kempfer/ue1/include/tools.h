@@ -5,5 +5,6 @@
 #include "TTime.h"
 
 void printStart(TDate, TTime, double);
+string statusToString(int);
 
 #endif // TOOLS_H_INCLUDED
